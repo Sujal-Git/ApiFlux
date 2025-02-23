@@ -15,4 +15,4 @@
 ## Installation ⬇️  
 Install SmartFetch using npm:  
 ```sh
-npm install smartfetch-js
+npm install apiflux
