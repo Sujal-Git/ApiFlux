@@ -1,5 +1,5 @@
 {
-  "name": "snapfetch",
+  "name": "smartfetch",
   "version": "1.0.0",
   "description": "SmartFetch is a powerful and lightweight JavaScript library for making API requests effortlessly. It provides built-in error handling, retry logic, and support for query parameters, ensuring reliable HTTP requests. Perfect for developers who want a cleaner and more efficient way to handle API calls.",
   "main": "index.js",
@@ -18,11 +18,18 @@
     "web-request",
     "promise",
     "async-await"
-  ]
-  ,
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sujal vishwakarma",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sujal-Git/SmartFetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sujal-Git/SmartFetch/issues"
+  },
+  "homepage": "https://github.com/Sujal-Git/SmartFetch#readme"
 }
