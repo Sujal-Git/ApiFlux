@@ -1,6 +1,6 @@
 {
   "name": "apiflux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "apiflux is a powerful and lightweight JavaScript library for making API requests effortlessly. It provides built-in error handling, retry logic, and support for query parameters, ensuring reliable HTTP requests. Perfect for developers who want a cleaner and more efficient way to handle API calls.",
   "main": "index.js",
   "keywords": [
@@ -26,10 +26,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sujal-Git/SmartFetch.git"
+    "url": "git+https://github.com/Sujal-Git/ApiFlux.git"
   },
   "bugs": {
-    "url": "https://github.com/Sujal-Git/SmartFetch/issues"
+    "url": "https://github.com/Sujal-Git/ApiFlux/issues"
   },
-  "homepage": "https://github.com/Sujal-Git/SmartFetch#readme"
+  "homepage": "https://github.com/Sujal-Git/ApiFlux#readme"
 }

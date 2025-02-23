@@ -1,5 +1,5 @@
-# SmartFetch 🚀  
-**SmartFetch** is a powerful and lightweight JavaScript library for making API requests with ease. It provides built-in error handling, retry logic, and support for query parameters, making HTTP requests simpler and more reliable.  
+# ApiFlux 🚀  
+**ApiFlux** is a powerful and lightweight JavaScript library for making API requests with ease. It provides built-in error handling, retry logic, and support for query parameters, making HTTP requests simpler and more reliable.  
 
 ---
 
@@ -15,4 +15,4 @@
 ## Installation ⬇️  
 Install SmartFetch using npm:  
 ```sh
-npm install smartfetch-js
+npm install apiflux
