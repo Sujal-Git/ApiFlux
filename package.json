@@ -1,8 +1,25 @@
 {
   "name": "snapfetch",
   "version": "1.0.0",
-  "description": "",
+  "description": "SmartFetch is a powerful and lightweight JavaScript library for making API requests effortlessly. It provides built-in error handling, retry logic, and support for query parameters, ensuring reliable HTTP requests. Perfect for developers who want a cleaner and more efficient way to handle API calls.",
   "main": "index.js",
+  "keywords": [
+    "fetch",
+    "api",
+    "http",
+    "request",
+    "retry",
+    "error-handling",
+    "javascript",
+    "smart-fetch",
+    "lightweight",
+    "query-parameters",
+    "http-client",
+    "web-request",
+    "promise",
+    "async-await"
+  ]
+  ,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
