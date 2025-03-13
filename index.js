@@ -1,8 +1,8 @@
 const smartFetch = async (url, params = {}, options = {}) => {
   const {
     method = 'GET',
-    retries = 3,           
-    retryDelay = 1000       
+    retries = 3,
+    retryDelay = 1000
   } = options;
 
   // Function to add delay
@@ -29,8 +29,8 @@ const smartFetch = async (url, params = {}, options = {}) => {
 
       // Parse response
       const contentType = res.headers.get('content-type');
-      const data = contentType && contentType.includes('application/json') 
-                   ? await res.json() 
+      const data = contentType && contentType.includes('application/json')
+                   ? await res.json()
                    : await res.text();
 
       return data;
@@ -38,7 +38,7 @@ const smartFetch = async (url, params = {}, options = {}) => {
       // Retry for Network Errors
       if (attempt <= retries) {
         console.warn(`Network Error: ${error.message}. Retrying (${attempt}/${retries})...`);
-        await delay(retryDelay * attempt); 
+        await delay(retryDelay * attempt);
         return fetchWithRetry(attempt + 1);
       }
       console.error("Network Error:", error.message);
@@ -49,3 +49,4 @@ const smartFetch = async (url, params = {}, options = {}) => {
   return fetchWithRetry();
 };
 
+export default smartFetch;
