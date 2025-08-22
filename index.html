@@ -1,0 +1,62 @@
+<h1 id="apiflux-">ApiFlux 🚀</h1>
+<p><strong>ApiFlux</strong> is a powerful and lightweight JavaScript library for making API requests with ease. It provides built-in error handling, retry logic, and support for query parameters, making HTTP requests simpler and more reliable.  </p>
+<hr>
+<h2 id="basic-usage-">Basic Usage 🚀</h2>
+<p><code>smartFetch(url, params, options)</code>  </p>
+<ul>
+<li><code>url</code> (string) - The API endpoint to request data from.  </li>
+<li><code>params</code> (object) - Query parameters to append to the URL. Default is an empty object.  </li>
+<li><code>options</code> (object) - Additional fetch options, including:  <ul>
+<li><code>method</code> (string) - HTTP method (GET, POST, PUT, DELETE, etc.). Default is &#39;GET&#39;.  </li>
+<li><code>retries</code> (number) - Number of retry attempts for failed requests. Default is 3.  </li>
+<li><code>retryDelay</code> (number) - Delay between retry attempts in milliseconds. Default is 1000.  </li>
+</ul>
+</li>
+</ul>
+<p>Example:  </p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> smartFetch <span class="hljs-keyword">from</span> <span class="hljs-string">'apiflux'</span>;
+
+<span class="hljs-keyword">const</span> fetchData = <span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> smartFetch(<span class="hljs-string">'https://catfact.ninja/fact'</span>);
+  <span class="hljs-built_in">console</span>.log(data);
+};
+
+fetchData();
+</code></pre>
+<hr>
+<p>Example with query parameter:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> fetchDataWithParams = <span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> smartFetch(<span class="hljs-string">'https://api.example.com/search'</span>, { q: <span class="hljs-string">'javascript'</span> });
+  console.log(data);
+};
+
+fetchDataWithParams();
+</code></pre>
+<hr>
+<p>Example with Post Request:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> postData = <span class="hljs-keyword">async</span> () =&gt; {
+  <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> smartFetch(<span class="hljs-string">'https://api.example.com/create'</span>, {}, {
+    <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
+    <span class="hljs-attr">body</span>: <span class="hljs-built_in">JSON</span>.stringify({ <span class="hljs-attr">name</span>: <span class="hljs-string">'John'</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> }),
+    <span class="hljs-attr">headers</span>: {
+      <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>
+    }
+  });
+  <span class="hljs-built_in">console</span>.log(data);
+};
+
+postData();
+</code></pre>
+<hr>
+<h2 id="features-">Features ✨</h2>
+<ul>
+<li><strong>Universal HTTP Support:</strong> Works with all HTTP methods (GET, POST, PUT, DELETE, etc.).  </li>
+<li><strong>Built-in Error Handling:</strong> Automatically detects and handles server and network errors.  </li>
+<li><strong>Retry Mechanism:</strong> Retries failed requests with customizable retry attempts and delay.  </li>
+<li><strong>Query Parameters Made Easy:</strong> Effortlessly attach query parameters to your requests.  </li>
+<li><strong>Smart Response Handling:</strong> Automatically parses JSON or returns plain text based on response type.  </li>
+</ul>
+<hr>
+<h2 id="installation-">Installation ⬇️</h2>
+<p>Install ApiFlux using npm:<br>```sh
+npm install apiflux</p>
